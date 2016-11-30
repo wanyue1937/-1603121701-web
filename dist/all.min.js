@@ -1,0 +1,1 @@
+function mod1(o){console.log(o+a)}function mod2(){return"mod2"}var b="gulp demo";mod1("hello "+b);var a=1;

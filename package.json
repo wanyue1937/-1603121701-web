@@ -1,0 +1,103 @@
+{
+  "_args": [
+    [
+      "glob@^4.3.1",
+      "/Users/yueyue/node_modules/glob-stream"
+    ]
+  ],
+  "_from": "glob@>=4.3.1 <5.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/glob",
+  "_nodeVersion": "1.4.2",
+  "_npmUser": {
+    "email": "i@izs.me",
+    "name": "isaacs"
+  },
+  "_npmVersion": "2.7.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "glob",
+    "raw": "glob@^4.3.1",
+    "rawSpec": "^4.3.1",
+    "scope": null,
+    "spec": ">=4.3.1 <5.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/glob-stream"
+  ],
+  "_resolved": "https://registry.npmjs.org/glob/-/glob-4.5.3.tgz",
+  "_shasum": "c6cb73d3226c1efef04de3c56d012f03377ee15f",
+  "_shrinkwrap": null,
+  "_spec": "glob@^4.3.1",
+  "_where": "/Users/yueyue/node_modules/glob-stream",
+  "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "bugs": {
+    "url": "https://github.com/isaacs/node-glob/issues"
+  },
+  "dependencies": {
+    "inflight": "^1.0.4",
+    "inherits": "2",
+    "minimatch": "^2.0.1",
+    "once": "^1.3.0"
+  },
+  "description": "a little globber",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-include": "^2.3.1",
+    "gulp-inline-source": "^3.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp.spritesmith": "^6.2.1",
+    "jshint": "^2.9.4",
+    "mkdirp": "0",
+    "rimraf": "^2.2.8",
+    "tap": "^0.5.0",
+    "tick": "0.0.6"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "c6cb73d3226c1efef04de3c56d012f03377ee15f",
+    "tarball": "https://registry.npmjs.org/glob/-/glob-4.5.3.tgz"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "files": [
+    "glob.js",
+    "sync.js",
+    "common.js"
+  ],
+  "homepage": "https://github.com/isaacs/node-glob",
+  "license": "ISC",
+  "main": "glob.js",
+  "maintainers": [
+    "isaacs <i@izs.me>"
+  ],
+  "name": "project",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/isaacs/node-glob.git"
+  },
+  "scripts": {
+    "bench": "bash benchmark.sh",
+    "benchclean": "bash benchclean.sh",
+    "prepublish": "npm run benchclean",
+    "prof": "bash prof.sh && cat profile.txt",
+    "profclean": "rm -f v8.log profile.txt",
+    "test": "npm run profclean && tap test/*.js",
+    "test-regen": "npm run profclean && TEST_REGEN=1 node test/00-setup.js"
+  },
+  "version": "4.5.3"
+}
